@@ -3,7 +3,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+#include <stdint.h>
 #define D1E 1
 #define D1A 2
 #define D2E 3
@@ -47,7 +47,7 @@ void Ds_Encienda_Disp(char dispNum);
     La funcion BCD
     convierte el decimal a BCD y lo traduce a la configuración del hardware actual
 */
-void Ds_BCD(char );
+void Ds_BCD(char digito);
 
 
 /*
@@ -60,6 +60,8 @@ void Ds_Mostrar_en_display(Ds_Display *dsp, char d1, char d2, char d3);
 */
 char Ds_Convertir_en_uni_deci_centi(Ds_Display *dsp,int num);
 
+void Ds_Separar_Digito (Ds_Display *dsp, uint16_t Recibido);
+uint16_t Ds_Regla_de_3 ( uint16_t Leido);
 
 
 

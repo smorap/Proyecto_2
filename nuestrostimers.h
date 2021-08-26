@@ -11,10 +11,10 @@ typedef struct Tm_Periodico Tm_Periodico;
 #define TM_Out_B_TC			0x04U
 struct Tm_Periodico
 {
-	unsigned int	contador,// van los conteos temporales por timer multiplo
-	periodo;//hasta donde quiero contar
-	unsigned long	timeout;//ac� va un timeout
-	unsigned char banderas; //el primer bit me dice si est� activo este timer el segundo me dice si se da periodo
+	unsigned int contador;
+    unsigned int periodo; 
+	unsigned long	timeout;//acá va un timeout
+	unsigned char banderas; //el primer bit me dice si está activo este timer el segundo me dice si se da periodo
 };
 
 //funciones para  procesar tiempo
