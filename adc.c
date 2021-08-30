@@ -69,7 +69,7 @@ void ADC_Initialize(void)
     // set the ADC to the options selected in the User Interface
     
     // ADFM left; ADNREF VSS; ADPREF VDD; ADCS FOSC/64; 
-    ADCON1 = 0x60;
+    ADCON1 = 0b11100000;
     
     // ADRESL 0; 
     ADRESL = 0x00;
@@ -78,7 +78,7 @@ void ADC_Initialize(void)
     ADRESH = 0x00;
     
     // GO_nDONE stop; ADON enabled; CHS AN0; 
-    ADCON0 = 0x21;
+    ADCON0 = 0b00100011;
     
 }
 
@@ -93,14 +93,14 @@ void ADC_SelectChannel(adc_channel_t channel)
 void ADC_StartConversion(void)
 {
     // Start the conversion
-    ADCON0bits.GO = 1;
+    ADCON0bits.GO_nDONE = 1;
 }
 
 
 bool ADC_IsConversionDone(void)
 {
     // Start the conversion
-   return ((bool)(!ADCON0bits.GO));
+   return ((bool)(!ADCON0bits.GO_nDONE));
 }
 
 adc_result_t ADC_GetConversionResult(void)

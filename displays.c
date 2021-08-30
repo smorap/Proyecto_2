@@ -180,21 +180,15 @@ void Ds_Separar_Digito (Ds_Display *dsp, uint16_t Recibido){
 }
 
 uint16_t Ds_Regla_de_3 (uint16_t Leido){ // retora el valor leido de 0-10           
-    //int salida =0;
-    //salida=(((int)Leido)*333)/341;
     float salidaa=0.97654;
-    uint16_t salida = (uint16_t) Leido*salidaa;
-    //salida = (uint16_t) salida;
+    uint16_t salida = (uint16_t)(((float)Leido)*salidaa);
 	return(salida);
 }
 
 
 void Ds_Procese_displays (Ds_Display *dsp){
 
-    switch ( dsp->estados)
-{
-    // declarations
-    // . . .
+    switch ( dsp->estados){
 	
     case D1E:
         --(dsp->tempE);
