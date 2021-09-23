@@ -1567,8 +1567,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/eusart1.c: 77:     TX1STA = 0x24;
 [e = _TX1STA -> -> 36 `i `uc ]
 "80
-[; ;mcc_generated_files/eusart1.c: 80:     SP1BRGL = 0x8A;
-[e = _SP1BRGL -> -> 138 `i `uc ]
+[; ;mcc_generated_files/eusart1.c: 80:     SP1BRGL = 0x22;
+[e = _SP1BRGL -> -> 34 `i `uc ]
 "83
 [; ;mcc_generated_files/eusart1.c: 83:     SP1BRGH = 0x00;
 [e = _SP1BRGH -> -> 0 `i `uc ]

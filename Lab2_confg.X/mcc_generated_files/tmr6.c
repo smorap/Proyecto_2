@@ -72,8 +72,8 @@ void TMR6_Initialize(void)
     // T6RSEL T6CKIPPS pin; 
     T6RST = 0x00;
 
-    // PR6 199; 
-    T6PR = 0xC7;
+    // PR6 4; 
+    T6PR = 0x04;
 
     // TMR6 0; 
     T6TMR = 0x00;
@@ -81,8 +81,8 @@ void TMR6_Initialize(void)
     // Clearing IF flag.
     PIR4bits.TMR6IF = 0;
 
-    // T6CKPS 1:4; T6OUTPS 1:8; TMR6ON on; 
-    T6CON = 0xA7;
+    // T6CKPS 1:128; T6OUTPS 1:13; TMR6ON on; 
+    T6CON = 0xFC;
 }
 
 void TMR6_ModeSet(TMR6_HLT_MODE mode)

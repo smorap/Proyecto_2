@@ -58,8 +58,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ADACQ `Vuc ~T0 @X0 0 e@3932 ]
 "107 mcc_generated_files/adcc.c
 [; ;mcc_generated_files/adcc.c: 107: void ADCC_StartConversion(adcc_channel_t channel)
-[c E10049 8 9 60 61 62 63 .. ]
-[n E10049 . channel_ANB0 channel_ANB1 channel_VSS channel_Temp channel_DAC1 channel_FVR_buf1  ]
+[c E10049 8 60 61 62 63 .. ]
+[n E10049 . channel_ANB0 channel_VSS channel_Temp channel_DAC1 channel_FVR_buf1  ]
 "13923 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h: 13923:     struct {
 [s S721 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -1620,11 +1620,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/adcc.c: 94:     ADREF = 0x00;
 [e = _ADREF -> -> 0 `i `uc ]
 "96
-[; ;mcc_generated_files/adcc.c: 96:     ADACT = 0x00;
-[e = _ADACT -> -> 0 `i `uc ]
+[; ;mcc_generated_files/adcc.c: 96:     ADACT = 0x08;
+[e = _ADACT -> -> 8 `i `uc ]
 "98
-[; ;mcc_generated_files/adcc.c: 98:     ADCLK = 0x1F;
-[e = _ADCLK -> -> 31 `i `uc ]
+[; ;mcc_generated_files/adcc.c: 98:     ADCLK = 0x07;
+[e = _ADCLK -> -> 7 `i `uc ]
 "100
 [; ;mcc_generated_files/adcc.c: 100:     ADCON0 = 0x84;
 [e = _ADCON0 -> -> 132 `i `uc ]

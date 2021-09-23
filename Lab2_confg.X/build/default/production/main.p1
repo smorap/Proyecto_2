@@ -1,16 +1,29 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"15 main.c
+[; ;main.c: 15: {
+[s S1493 `i 1 `uc 1 `uc 1 `uc 1 ]
+[n S1493 Maquinita posicion inicio finall estados ]
+"31
+[; ;main.c: 31: {
+[s S1497 `uc -> 4 `i ]
+[n S1497 Paquete_Salida Pack ]
+"321 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 321: uint8_t EUSART1_Read(void);
+[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
+"22005 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h: 22005: extern volatile unsigned char T6CON __attribute__((address(0xFB1)));
+[v _T6CON `Vuc ~T0 @X0 0 e@4017 ]
 [p mainexit ]
 "72 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"13 ./nuestrostimers.h
-[; ;./nuestrostimers.h: 13: {
-[s S1493 `ui 1 `ui 1 `ul 1 `uc 1 ]
-[n S1493 Tm_Periodico contador periodo timeout banderas ]
-"25
-[; ;./nuestrostimers.h: 25: void Tm_Inicie_periodico (Tm_Periodico *ctp,unsigned int periodo);
-[v _Tm_Inicie_periodico `(v ~T0 @X0 0 ef2`*S1493`ui ]
-"16729 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h
+"127 ./mcc_generated_files/adcc.h
+[; ;./mcc_generated_files/adcc.h: 127: void ADCC_Initialize(void);
+[v _ADCC_Initialize `(v ~T0 @X0 0 ef ]
+"21967 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h: 21967: extern volatile unsigned char T6PR __attribute__((address(0xFB0)));
+[v _T6PR `Vuc ~T0 @X0 0 e@4016 ]
+"16729
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h: 16729:     struct {
 [s S833 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S833 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
@@ -25,18 +38,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "16750
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h: 16750: extern volatile LATDbits_t LATDbits __attribute__((address(0xF86)));
 [v _LATDbits `VS832 ~T0 @X0 0 e@3974 ]
-"791 ./mcc_generated_files/tmr6.h
-[; ;./mcc_generated_files/tmr6.h: 791: _Bool TMR6_HasOverflowOccured(void);
-[v _TMR6_HasOverflowOccured `(a ~T0 @X0 0 ef ]
-"21 ./nuestrostimers.h
-[; ;./nuestrostimers.h: 21: void Tm_Procese_tiempo (Tm_Periodico *ctp);
-[v _Tm_Procese_tiempo `(v ~T0 @X0 0 ef1`*S1493 ]
-"26
-[; ;./nuestrostimers.h: 26: char Tm_Hubo_periodico (Tm_Periodico *ctp);
-[v _Tm_Hubo_periodico `(uc ~T0 @X0 0 ef1`*S1493 ]
-"27
-[; ;./nuestrostimers.h: 27: void Tm_Baje_periodico (Tm_Periodico *ctp);
-[v _Tm_Baje_periodico `(v ~T0 @X0 0 ef1`*S1493 ]
+"206 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 206: _Bool EUSART1_is_rx_ready(void);
+[v _EUSART1_is_rx_ready `(a ~T0 @X0 0 ef ]
+"186 ./mcc_generated_files/adcc.h
+[; ;./mcc_generated_files/adcc.h: 186: _Bool ADCC_IsConversionDone(void);
+[v _ADCC_IsConversionDone `(a ~T0 @X0 0 ef ]
+"218
+[; ;./mcc_generated_files/adcc.h: 218: adc_result_t ADCC_GetConversionResult(void);
+[v _ADCC_GetConversionResult `(us ~T0 @X0 0 ef ]
+"158 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 158: _Bool EUSART1_is_tx_ready(void);
+[v _EUSART1_is_tx_ready `(a ~T0 @X0 0 ef ]
+"341
+[; ;./mcc_generated_files/eusart1.h: 341: void EUSART1_Write(uint8_t txData);
+[v _EUSART1_Write `(v ~T0 @X0 0 ef1`uc ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h: 54: __asm("RX2PPS equ 0E8Dh");
 [; <" RX2PPS equ 0E8Dh ;# ">
@@ -1423,91 +1439,617 @@ Version 4.0 HI-TECH Software Intermediate Code
 "28207
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h: 28207: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-[v $root$_main `(v ~T0 @X0 0 e ]
-"50 main.c
-[; ;main.c: 50: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
+"6 main.c
+[; ;main.c: 6: volatile uint8_t V_Recibido[7];
+[v _V_Recibido `Vuc ~T0 @X0 -> 7 `i e ]
+"7
+[; ;main.c: 7: volatile char Transmision_Error=0;
+[v _Transmision_Error `Vuc ~T0 @X0 1 e ]
+[i _Transmision_Error
+-> -> 0 `i `uc
+]
+"8
+[; ;main.c: 8: volatile char Transmision_Completada=0;
+[v _Transmision_Completada `Vuc ~T0 @X0 1 e ]
+[i _Transmision_Completada
+-> -> 0 `i `uc
+]
+"9
+[; ;main.c: 9: volatile int conteo=0;
+[v _conteo `Vi ~T0 @X0 1 e ]
+[i _conteo
+-> 0 `i
+]
+"10
+[; ;main.c: 10: volatile uint16_t recibido=0;
+[v _recibido `Vus ~T0 @X0 1 e ]
+[i _recibido
+-> -> 0 `i `us
+]
+"11
+[; ;main.c: 11: volatile uint16_t recibidoo=0;
+[v _recibidoo `Vus ~T0 @X0 1 e ]
+[i _recibidoo
+-> -> 0 `i `us
+]
+"22
+[; ;main.c: 22: void Inicializar_Maquinita (Maquinita *mqnt){
+[v _Inicializar_Maquinita `(v ~T0 @X0 1 ef1`*S1493 ]
+{
+[e :U _Inicializar_Maquinita ]
+[v _mqnt `*S1493 ~T0 @X0 1 r1 ]
+[f ]
+"23
+[; ;main.c: 23:  mqnt-> posicion = 0;
+[e = . *U _mqnt 0 -> 0 `i ]
+"24
+[; ;main.c: 24:  mqnt-> inicio = '#';
+[e = . *U _mqnt 1 -> -> 35 `ui `uc ]
+"25
+[; ;main.c: 25:  mqnt-> finall = '*';
+[e = . *U _mqnt 2 -> -> 42 `ui `uc ]
+"26
+[; ;main.c: 26:  mqnt-> estados = 0;
+[e = . *U _mqnt 3 -> -> 0 `i `uc ]
+"27
+[; ;main.c: 27: }
+[e :UE 1495 ]
+}
+"34
+[; ;main.c: 34: void Inicializar_Paquete (Paquete_Salida *mqnt){
+[v _Inicializar_Paquete `(v ~T0 @X0 1 ef1`*S1497 ]
+{
+[e :U _Inicializar_Paquete ]
+[v _mqnt `*S1497 ~T0 @X0 1 r1 ]
+[f ]
+"35
+[; ;main.c: 35:  mqnt-> Pack[0] = 0;
+[e = *U + &U . *U _mqnt 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _mqnt 0 `ui `ux -> -> 0 `i `uc ]
+"36
+[; ;main.c: 36:  mqnt-> Pack[1] = 0;
+[e = *U + &U . *U _mqnt 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _mqnt 0 `ui `ux -> -> 0 `i `uc ]
+"37
+[; ;main.c: 37:  mqnt-> Pack[2] = 0;
+[e = *U + &U . *U _mqnt 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _mqnt 0 `ui `ux -> -> 0 `i `uc ]
+"38
+[; ;main.c: 38:  mqnt-> Pack[3] = 0;
+[e = *U + &U . *U _mqnt 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _mqnt 0 `ui `ux -> -> 0 `i `uc ]
+"39
+[; ;main.c: 39: }
+[e :UE 1499 ]
+}
+"41
+[; ;main.c: 41: void Procese_UART(Maquinita *mqnt ){
+[v _Procese_UART `(v ~T0 @X0 1 ef1`*S1493 ]
+{
+[e :U _Procese_UART ]
+[v _mqnt `*S1493 ~T0 @X0 1 r1 ]
+[f ]
+"43
+[; ;main.c: 43:  switch (mqnt->estados) {
+[e $U 1502  ]
+{
+"44
+[; ;main.c: 44:   case 0:
+[e :U 1503 ]
+"45
+[; ;main.c: 45:    V_Recibido[mqnt-> posicion] = EUSART1_Read();
+[e = *U + &U _V_Recibido * -> -> . *U _mqnt 0 `ui `ux -> -> # *U &U _V_Recibido `ui `ux ( _EUSART1_Read ..  ]
+"46
+[; ;main.c: 46:    if (V_Recibido[mqnt-> posicion]== mqnt->inicio){
+[e $ ! == -> *U + &U _V_Recibido * -> -> . *U _mqnt 0 `ui `ux -> -> # *U &U _V_Recibido `ui `ux `i -> . *U _mqnt 1 `i 1504  ]
+{
+"48
+[; ;main.c: 48:                 mqnt->estados = 1;
+[e = . *U _mqnt 3 -> -> 1 `i `uc ]
+"49
+[; ;main.c: 49:     mqnt-> posicion = mqnt-> posicion + 1;
+[e = . *U _mqnt 0 + . *U _mqnt 0 -> 1 `i ]
+"50
+[; ;main.c: 50:    }
+}
+[e :U 1504 ]
 "51
-[; ;main.c: 51: {
+[; ;main.c: 51:    Transmision_Error=0;
+[e = _Transmision_Error -> -> 0 `i `uc ]
+"52
+[; ;main.c: 52:   break;
+[e $U 1501  ]
+"54
+[; ;main.c: 54:   case 1:
+[e :U 1505 ]
+"56
+[; ;main.c: 56:    V_Recibido[mqnt-> posicion] = EUSART1_Read();
+[e = *U + &U _V_Recibido * -> -> . *U _mqnt 0 `ui `ux -> -> # *U &U _V_Recibido `ui `ux ( _EUSART1_Read ..  ]
+"57
+[; ;main.c: 57:    mqnt->estados = 2;
+[e = . *U _mqnt 3 -> -> 2 `i `uc ]
+"58
+[; ;main.c: 58:    mqnt-> posicion = mqnt-> posicion + 1;
+[e = . *U _mqnt 0 + . *U _mqnt 0 -> 1 `i ]
+"59
+[; ;main.c: 59:   break;
+[e $U 1501  ]
+"61
+[; ;main.c: 61:   case 2:
+[e :U 1506 ]
+"62
+[; ;main.c: 62:    V_Recibido[mqnt-> posicion] = EUSART1_Read();
+[e = *U + &U _V_Recibido * -> -> . *U _mqnt 0 `ui `ux -> -> # *U &U _V_Recibido `ui `ux ( _EUSART1_Read ..  ]
+"63
+[; ;main.c: 63:    mqnt->estados = 3;
+[e = . *U _mqnt 3 -> -> 3 `i `uc ]
+"64
+[; ;main.c: 64:    mqnt-> posicion = mqnt-> posicion + 1;
+[e = . *U _mqnt 0 + . *U _mqnt 0 -> 1 `i ]
+"65
+[; ;main.c: 65:   break;
+[e $U 1501  ]
+"67
+[; ;main.c: 67:   case 3:
+[e :U 1507 ]
+"68
+[; ;main.c: 68:    V_Recibido[mqnt-> posicion] = EUSART1_Read();
+[e = *U + &U _V_Recibido * -> -> . *U _mqnt 0 `ui `ux -> -> # *U &U _V_Recibido `ui `ux ( _EUSART1_Read ..  ]
+"69
+[; ;main.c: 69:    mqnt->estados = 4;
+[e = . *U _mqnt 3 -> -> 4 `i `uc ]
+"70
+[; ;main.c: 70:    mqnt-> posicion = mqnt-> posicion + 1;
+[e = . *U _mqnt 0 + . *U _mqnt 0 -> 1 `i ]
+"71
+[; ;main.c: 71:   break;
+[e $U 1501  ]
+"73
+[; ;main.c: 73:   case 4:
+[e :U 1508 ]
+"74
+[; ;main.c: 74:    V_Recibido[mqnt-> posicion] = EUSART1_Read();
+[e = *U + &U _V_Recibido * -> -> . *U _mqnt 0 `ui `ux -> -> # *U &U _V_Recibido `ui `ux ( _EUSART1_Read ..  ]
+"75
+[; ;main.c: 75:    mqnt->estados = 5;
+[e = . *U _mqnt 3 -> -> 5 `i `uc ]
+"76
+[; ;main.c: 76:    mqnt-> posicion = mqnt-> posicion + 1;
+[e = . *U _mqnt 0 + . *U _mqnt 0 -> 1 `i ]
+"77
+[; ;main.c: 77:   break;
+[e $U 1501  ]
+"79
+[; ;main.c: 79:   case 5:
+[e :U 1509 ]
+"80
+[; ;main.c: 80:    V_Recibido[mqnt-> posicion] = EUSART1_Read();
+[e = *U + &U _V_Recibido * -> -> . *U _mqnt 0 `ui `ux -> -> # *U &U _V_Recibido `ui `ux ( _EUSART1_Read ..  ]
+"81
+[; ;main.c: 81:    mqnt->estados = 6;
+[e = . *U _mqnt 3 -> -> 6 `i `uc ]
+"82
+[; ;main.c: 82:    mqnt-> posicion = mqnt-> posicion + 1;
+[e = . *U _mqnt 0 + . *U _mqnt 0 -> 1 `i ]
+"83
+[; ;main.c: 83:   break;
+[e $U 1501  ]
+"85
+[; ;main.c: 85:   case 6:
+[e :U 1510 ]
+"86
+[; ;main.c: 86:    V_Recibido[mqnt-> posicion] = EUSART1_Read();
+[e = *U + &U _V_Recibido * -> -> . *U _mqnt 0 `ui `ux -> -> # *U &U _V_Recibido `ui `ux ( _EUSART1_Read ..  ]
+"88
+[; ;main.c: 88:    if (V_Recibido[mqnt-> posicion] == mqnt->finall){
+[e $ ! == -> *U + &U _V_Recibido * -> -> . *U _mqnt 0 `ui `ux -> -> # *U &U _V_Recibido `ui `ux `i -> . *U _mqnt 2 `i 1511  ]
+{
+"89
+[; ;main.c: 89:     Transmision_Completada = 1;
+[e = _Transmision_Completada -> -> 1 `i `uc ]
+"90
+[; ;main.c: 90:    }else {
+}
+[e $U 1512  ]
+[e :U 1511 ]
+{
+"91
+[; ;main.c: 91:     Transmision_Error = 1;
+[e = _Transmision_Error -> -> 1 `i `uc ]
+"92
+[; ;main.c: 92:    }
+}
+[e :U 1512 ]
+"93
+[; ;main.c: 93:    mqnt->estados = 0;
+[e = . *U _mqnt 3 -> -> 0 `i `uc ]
+"94
+[; ;main.c: 94:    mqnt-> posicion = 0;
+[e = . *U _mqnt 0 -> 0 `i ]
+"95
+[; ;main.c: 95:   break;
+[e $U 1501  ]
+"96
+[; ;main.c: 96:  }
+}
+[e $U 1501  ]
+[e :U 1502 ]
+[e [\ -> . *U _mqnt 3 `i , $ -> 0 `i 1503
+ , $ -> 1 `i 1505
+ , $ -> 2 `i 1506
+ , $ -> 3 `i 1507
+ , $ -> 4 `i 1508
+ , $ -> 5 `i 1509
+ , $ -> 6 `i 1510
+ 1501 ]
+[e :U 1501 ]
+"97
+[; ;main.c: 97: }
+[e :UE 1500 ]
+}
+"99
+[; ;main.c: 99: void Procese_Dato_Rebido(void){
+[v _Procese_Dato_Rebido `(v ~T0 @X0 1 ef ]
+{
+[e :U _Procese_Dato_Rebido ]
+[f ]
+"101
+[; ;main.c: 101:  recibido=((V_Recibido[5]-'0')*1 + (V_Recibido[4]-'0')*10 + (V_Recibido[3]-'0')*100 + (V_Recibido[2]-'0')*1000+(V_Recibido[1]-'0')*10000);
+[e = _recibido -> + + + + * - -> *U + &U _V_Recibido * -> -> -> 5 `i `ui `ux -> -> # *U &U _V_Recibido `ui `ux `ui -> 48 `ui -> -> 1 `i `ui * - -> *U + &U _V_Recibido * -> -> -> 4 `i `ui `ux -> -> # *U &U _V_Recibido `ui `ux `ui -> 48 `ui -> -> 10 `i `ui * - -> *U + &U _V_Recibido * -> -> -> 3 `i `ui `ux -> -> # *U &U _V_Recibido `ui `ux `ui -> 48 `ui -> -> 100 `i `ui * - -> *U + &U _V_Recibido * -> -> -> 2 `i `ui `ux -> -> # *U &U _V_Recibido `ui `ux `ui -> 48 `ui -> -> 1000 `i `ui * - -> *U + &U _V_Recibido * -> -> -> 1 `i `ui `ux -> -> # *U &U _V_Recibido `ui `ux `ui -> 48 `ui -> -> 10000 `i `ui `us ]
+"102
+[; ;main.c: 102:     if(recibido >= 500 && recibido <= 4100){
+[e $ ! && >= -> _recibido `ui -> -> 500 `i `ui <= -> _recibido `ui -> -> 4100 `i `ui 1514  ]
+{
+"103
+[; ;main.c: 103:   T6CON = 0xF0;
+[e = _T6CON -> -> 240 `i `uc ]
+"104
+[; ;main.c: 104:   conteo = recibido / 16;
+[e = _conteo -> / -> _recibido `ui -> -> 16 `i `ui `i ]
+"105
+[; ;main.c: 105:  }
+}
+[e :U 1514 ]
+"107
+[; ;main.c: 107:  if(recibido > 4100 && recibido <= 8200){
+[e $ ! && > -> _recibido `ui -> -> 4100 `i `ui <= -> _recibido `ui -> -> 8200 `i `ui 1515  ]
+{
+"108
+[; ;main.c: 108:   T6CON = 0xF1;
+[e = _T6CON -> -> 241 `i `uc ]
+"109
+[; ;main.c: 109:   conteo = recibido / 32;
+[e = _conteo -> / -> _recibido `ui -> -> 32 `i `ui `i ]
+"110
+[; ;main.c: 110:  }
+}
+[e :U 1515 ]
+"112
+[; ;main.c: 112:  if(recibido > 8200 && recibido <= 12200){
+[e $ ! && > -> _recibido `ui -> -> 8200 `i `ui <= -> _recibido `ui -> -> 12200 `i `ui 1516  ]
+{
+"113
+[; ;main.c: 113:   T6CON = 0xF2;
+[e = _T6CON -> -> 242 `i `uc ]
+"114
+[; ;main.c: 114:   conteo = recibido / 48;
+[e = _conteo -> / -> _recibido `ui -> -> 48 `i `ui `i ]
+"115
+[; ;main.c: 115:  }
+}
+[e :U 1516 ]
+"117
+[; ;main.c: 117:  if(recibido > 12200 && recibido <= 16200){
+[e $ ! && > -> _recibido `ui -> -> 12200 `i `ui <= -> _recibido `ui -> -> 16200 `i `ui 1517  ]
+{
+"118
+[; ;main.c: 118:   T6CON = 0xF3;
+[e = _T6CON -> -> 243 `i `uc ]
+"119
+[; ;main.c: 119:   conteo = recibido / 64;
+[e = _conteo -> / -> _recibido `ui -> -> 64 `i `ui `i ]
+"120
+[; ;main.c: 120:  }
+}
+[e :U 1517 ]
+"122
+[; ;main.c: 122:  if(recibido > 16200 && recibido <= 20400){
+[e $ ! && > -> _recibido `ui -> -> 16200 `i `ui <= -> _recibido `ui -> -> 20400 `i `ui 1518  ]
+{
+"123
+[; ;main.c: 123:   T6CON = 0xF4;
+[e = _T6CON -> -> 244 `i `uc ]
+"124
+[; ;main.c: 124:   conteo = recibido / 80;
+[e = _conteo -> / -> _recibido `ui -> -> 80 `i `ui `i ]
+"125
+[; ;main.c: 125:  }
+}
+[e :U 1518 ]
+"127
+[; ;main.c: 127:  if(recibido > 20400 && recibido <= 24500){
+[e $ ! && > -> _recibido `ui -> -> 20400 `i `ui <= -> _recibido `ui -> -> 24500 `i `ui 1519  ]
+{
+"128
+[; ;main.c: 128:   T6CON = 0xF5;
+[e = _T6CON -> -> 245 `i `uc ]
+"129
+[; ;main.c: 129:   conteo = recibido / 96;
+[e = _conteo -> / -> _recibido `ui -> -> 96 `i `ui `i ]
+"130
+[; ;main.c: 130:  }
+}
+[e :U 1519 ]
+"132
+[; ;main.c: 132:  if(recibido > 24500 && recibido <= 28600){
+[e $ ! && > -> _recibido `ui -> -> 24500 `i `ui <= -> _recibido `ui -> -> 28600 `i `ui 1520  ]
+{
+"133
+[; ;main.c: 133:   T6CON = 0xF6;
+[e = _T6CON -> -> 246 `i `uc ]
+"134
+[; ;main.c: 134:   conteo = recibido / 112;
+[e = _conteo -> / -> _recibido `ui -> -> 112 `i `ui `i ]
+"135
+[; ;main.c: 135:  }
+}
+[e :U 1520 ]
+"137
+[; ;main.c: 137:  if(recibido > 28600 && recibido <= 32700){
+[e $ ! && > -> _recibido `ui -> -> 28600 `i `ui <= -> _recibido `ui -> -> 32700 `i `ui 1521  ]
+{
+"138
+[; ;main.c: 138:   T6CON = 0xF7;
+[e = _T6CON -> -> 247 `i `uc ]
+"139
+[; ;main.c: 139:   conteo = recibido / 128;
+[e = _conteo -> / -> _recibido `ui -> -> 128 `i `ui `i ]
+"141
+[; ;main.c: 141:  }
+}
+[e :U 1521 ]
+"143
+[; ;main.c: 143:  if(recibido > 32700 && recibido <= 36800){
+[e $ ! && > -> _recibido `ui -> -> 32700 `i `ui <= -> _recibido `l -> 36800 `l 1522  ]
+{
+"144
+[; ;main.c: 144:   T6CON = 0xF8;
+[e = _T6CON -> -> 248 `i `uc ]
+"145
+[; ;main.c: 145:   conteo = recibido / 144;
+[e = _conteo -> / -> _recibido `ui -> -> 144 `i `ui `i ]
+"146
+[; ;main.c: 146:  }
+}
+[e :U 1522 ]
+"148
+[; ;main.c: 148:  if(recibido > 36800 && recibido <= 40100){
+[e $ ! && > -> _recibido `l -> 36800 `l <= -> _recibido `l -> 40100 `l 1523  ]
+{
+"149
+[; ;main.c: 149:   T6CON = 0xF9;
+[e = _T6CON -> -> 249 `i `uc ]
+"150
+[; ;main.c: 150:   conteo = recibido / 160;
+[e = _conteo -> / -> _recibido `ui -> -> 160 `i `ui `i ]
+"151
+[; ;main.c: 151:  }
+}
+[e :U 1523 ]
+"153
+[; ;main.c: 153:  if(recibido > 40100 && recibido <= 45000){
+[e $ ! && > -> _recibido `l -> 40100 `l <= -> _recibido `l -> 45000 `l 1524  ]
+{
+"154
+[; ;main.c: 154:   T6CON = 0xFA;
+[e = _T6CON -> -> 250 `i `uc ]
+"155
+[; ;main.c: 155:   conteo = recibido / 176;
+[e = _conteo -> / -> _recibido `ui -> -> 176 `i `ui `i ]
+"156
+[; ;main.c: 156:  }
+}
+[e :U 1524 ]
+"158
+[; ;main.c: 158:  if(recibido > 45000 && recibido <= 49100){
+[e $ ! && > -> _recibido `l -> 45000 `l <= -> _recibido `l -> 49100 `l 1525  ]
+{
+"159
+[; ;main.c: 159:   T6CON = 0xFB;
+[e = _T6CON -> -> 251 `i `uc ]
+"160
+[; ;main.c: 160:   conteo = recibido / 192;
+[e = _conteo -> / -> _recibido `ui -> -> 192 `i `ui `i ]
+"161
+[; ;main.c: 161:  }
+}
+[e :U 1525 ]
+"163
+[; ;main.c: 163:  if(recibido > 49100 && recibido <= 53200){
+[e $ ! && > -> _recibido `l -> 49100 `l <= -> _recibido `l -> 53200 `l 1526  ]
+{
+"164
+[; ;main.c: 164:   T6CON = 0xFC;
+[e = _T6CON -> -> 252 `i `uc ]
+"165
+[; ;main.c: 165:   conteo = recibido / 208;
+[e = _conteo -> / -> _recibido `ui -> -> 208 `i `ui `i ]
+"166
+[; ;main.c: 166:  }
+}
+[e :U 1526 ]
+"167
+[; ;main.c: 167: }
+[e :UE 1513 ]
+}
+"170
+[; ;main.c: 170: void Ds_Separar_Digito (Paquete_Salida *dsp, uint16_t datto){
+[v _Ds_Separar_Digito `(v ~T0 @X0 1 ef2`*S1497`us ]
+{
+[e :U _Ds_Separar_Digito ]
+[v _dsp `*S1497 ~T0 @X0 1 r1 ]
+[v _datto `us ~T0 @X0 1 r2 ]
+[f ]
+"171
+[; ;main.c: 171:                 dsp-> Pack[3] = datto % 10;
+[e = *U + &U . *U _dsp 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _dsp 0 `ui `ux -> % -> _datto `ui -> -> 10 `i `ui `uc ]
+"172
+[; ;main.c: 172:                 datto = datto/10;
+[e = _datto -> / -> _datto `ui -> -> 10 `i `ui `us ]
+"173
+[; ;main.c: 173:     dsp->Pack[2] = datto % 10;
+[e = *U + &U . *U _dsp 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _dsp 0 `ui `ux -> % -> _datto `ui -> -> 10 `i `ui `uc ]
+"174
+[; ;main.c: 174:     datto = datto/10;
+[e = _datto -> / -> _datto `ui -> -> 10 `i `ui `us ]
+"175
+[; ;main.c: 175:     dsp->Pack[1] = datto % 10;
+[e = *U + &U . *U _dsp 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _dsp 0 `ui `ux -> % -> _datto `ui -> -> 10 `i `ui `uc ]
+"176
+[; ;main.c: 176:     datto = datto/10;
+[e = _datto -> / -> _datto `ui -> -> 10 `i `ui `us ]
+"177
+[; ;main.c: 177:     dsp->Pack[0] = datto % 10;
+[e = *U + &U . *U _dsp 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _dsp 0 `ui `ux -> % -> _datto `ui -> -> 10 `i `ui `uc ]
+"178
+[; ;main.c: 178: }
+[e :UE 1527 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"184
+[; ;main.c: 184: void main(void){
+[v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"53
-[; ;main.c: 53:     SYSTEM_Initialize();
+"185
+[; ;main.c: 185:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"54
-[; ;main.c: 54:     Tm_Periodico Mi_timer;
-[v _Mi_timer `S1493 ~T0 @X0 1 a ]
-"55
-[; ;main.c: 55:     Tm_Inicie_periodico (&Mi_timer ,10000);
-[e ( _Tm_Inicie_periodico (2 , &U _Mi_timer -> -> 10000 `i `ui ]
-"56
-[; ;main.c: 56:     do { LATDbits.LATD0 = 0; } while(0);
-[e :U 1498 ]
+"187
+[; ;main.c: 187:  Maquinita My_Maquinita;
+[v _My_Maquinita `S1493 ~T0 @X0 1 a ]
+"188
+[; ;main.c: 188:  Inicializar_Maquinita(&My_Maquinita);
+[e ( _Inicializar_Maquinita (1 &U _My_Maquinita ]
+"190
+[; ;main.c: 190:  Paquete_Salida My_Paquete_Salida;
+[v _My_Paquete_Salida `S1497 ~T0 @X0 1 a ]
+"191
+[; ;main.c: 191:  Inicializar_Paquete(&My_Paquete_Salida);
+[e ( _Inicializar_Paquete (1 &U _My_Paquete_Salida ]
+"193
+[; ;main.c: 193:  ADCC_Initialize();
+[e ( _ADCC_Initialize ..  ]
+"195
+[; ;main.c: 195:     uint16_t ADC_Value = 0;
+[v _ADC_Value `us ~T0 @X0 1 a ]
+[e = _ADC_Value -> -> 0 `i `us ]
+"196
+[; ;main.c: 196:  char enviar = 0;
+[v _enviar `uc ~T0 @X0 1 a ]
+[e = _enviar -> -> 0 `i `uc ]
+"199
+[; ;main.c: 199:  T6PR = 0xDE;
+[e = _T6PR -> -> 222 `i `uc ]
+"200
+[; ;main.c: 200:  T6CON = 0xF6;
+[e = _T6CON -> -> 246 `i `uc ]
+"201
+[; ;main.c: 201:  do { LATDbits.LATD0 = 0; } while(0);
+[e :U 1531 ]
 {
 [e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 1497 ]
-"57
-[; ;main.c: 57:     do { LATDbits.LATD1 = 1; } while(0);
-[e :U 1501 ]
+[e :U 1530 ]
+"202
+[; ;main.c: 202:  do { LATDbits.LATD1 = 0; } while(0);
+[e :U 1534 ]
 {
-[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1500 ]
-"73
-[; ;main.c: 73:     _Bool encienda=1;
-[v _encienda `a ~T0 @X0 1 a ]
-[e = _encienda -> -> 1 `i `a ]
-"74
-[; ;main.c: 74:     while (1)
-[e :U 1503 ]
-"75
-[; ;main.c: 75:     {
+[e :U 1533 ]
+"204
+[; ;main.c: 204:     while (1){
+[e :U 1536 ]
 {
-"76
-[; ;main.c: 76:         if(TMR6_HasOverflowOccured()){
-[e $ ! != -> ( _TMR6_HasOverflowOccured ..  `i -> 0 `i 1505  ]
+"205
+[; ;main.c: 205:   if (EUSART1_is_rx_ready()){
+[e $ ! != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1538  ]
 {
-"77
-[; ;main.c: 77:             Tm_Procese_tiempo (&Mi_timer);
-[e ( _Tm_Procese_tiempo (1 &U _Mi_timer ]
-"78
-[; ;main.c: 78:         }
+"206
+[; ;main.c: 206:    Procese_UART (&My_Maquinita);
+[e ( _Procese_UART (1 &U _My_Maquinita ]
+"208
+[; ;main.c: 208:   }
 }
-[e :U 1505 ]
-"79
-[; ;main.c: 79:         if(Tm_Hubo_periodico(&Mi_timer)){
-[e $ ! != -> ( _Tm_Hubo_periodico (1 &U _Mi_timer `i -> 0 `i 1506  ]
+[e :U 1538 ]
+"210
+[; ;main.c: 210:   if (Transmision_Completada==1){
+[e $ ! == -> _Transmision_Completada `i -> 1 `i 1539  ]
 {
-"80
-[; ;main.c: 80:             Tm_Baje_periodico (&Mi_timer);
-[e ( _Tm_Baje_periodico (1 &U _Mi_timer ]
-"81
-[; ;main.c: 81:             do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0);
-[e :U 1509 ]
+"211
+[; ;main.c: 211:             do { LATDbits.LATD0 = 1; } while(0);
+[e :U 1542 ]
 {
-[e = . . _LATDbits 0 0 -> ~ -> . . _LATDbits 0 0 `i `uc ]
+[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 1508 ]
-"82
-[; ;main.c: 82:             do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0);
-[e :U 1512 ]
+[e :U 1541 ]
+"212
+[; ;main.c: 212:    Transmision_Completada = 0;
+[e = _Transmision_Completada -> -> 0 `i `uc ]
+"213
+[; ;main.c: 213:    Procese_Dato_Rebido();
+[e ( _Procese_Dato_Rebido ..  ]
+"215
+[; ;main.c: 215:   }
+}
+[e :U 1539 ]
+"217
+[; ;main.c: 217:   if (ADCC_IsConversionDone()){
+[e $ ! != -> ( _ADCC_IsConversionDone ..  `i -> 0 `i 1543  ]
 {
-[e = . . _LATDbits 0 1 -> ~ -> . . _LATDbits 0 1 `i `uc ]
+"218
+[; ;main.c: 218:    ADC_Value = ADCC_GetConversionResult();
+[e = _ADC_Value ( _ADCC_GetConversionResult ..  ]
+"219
+[; ;main.c: 219:    Ds_Separar_Digito(&My_Paquete_Salida, ADC_Value);
+[e ( _Ds_Separar_Digito (2 , &U _My_Paquete_Salida _ADC_Value ]
+"220
+[; ;main.c: 220:    enviar = 1;
+[e = _enviar -> -> 1 `i `uc ]
+"221
+[; ;main.c: 221:   }
 }
-[e :U 1511 ]
-"83
-[; ;main.c: 83:         }
+[e :U 1543 ]
+"223
+[; ;main.c: 223:   if(enviar && EUSART1_is_tx_ready()){
+[e $ ! && != -> _enviar `i -> 0 `i != -> ( _EUSART1_is_tx_ready ..  `i -> 0 `i 1544  ]
+{
+"224
+[; ;main.c: 224:    enviar = 0;
+[e = _enviar -> -> 0 `i `uc ]
+"226
+[; ;main.c: 226:    EUSART1_Write(My_Paquete_Salida.Pack[0] + '0');
+[e ( _EUSART1_Write (1 -> + -> *U + &U . _My_Paquete_Salida 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _My_Paquete_Salida 0 `ui `ux `ui -> 48 `ui `uc ]
+"227
+[; ;main.c: 227:    EUSART1_Write(My_Paquete_Salida.Pack[1] + '0');
+[e ( _EUSART1_Write (1 -> + -> *U + &U . _My_Paquete_Salida 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _My_Paquete_Salida 0 `ui `ux `ui -> 48 `ui `uc ]
+"228
+[; ;main.c: 228:    EUSART1_Write(My_Paquete_Salida.Pack[2] + '0');
+[e ( _EUSART1_Write (1 -> + -> *U + &U . _My_Paquete_Salida 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _My_Paquete_Salida 0 `ui `ux `ui -> 48 `ui `uc ]
+"229
+[; ;main.c: 229:    EUSART1_Write(My_Paquete_Salida.Pack[3] + '0');
+[e ( _EUSART1_Write (1 -> + -> *U + &U . _My_Paquete_Salida 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _My_Paquete_Salida 0 `ui `ux `ui -> 48 `ui `uc ]
+"232
+[; ;main.c: 232:    EUSART1_Write(0x0D);
+[e ( _EUSART1_Write (1 -> -> 13 `i `uc ]
+"233
+[; ;main.c: 233:   }
 }
-[e :U 1506 ]
-"85
-[; ;main.c: 85:     }
+[e :U 1544 ]
+"235
+[; ;main.c: 235:  }
 }
-[e :U 1502 ]
-[e $U 1503  ]
-[e :U 1504 ]
-"86
-[; ;main.c: 86: }
-[e :UE 1495 ]
+[e :U 1535 ]
+[e $U 1536  ]
+[e :U 1537 ]
+"236
+[; ;main.c: 236: }
+[e :UE 1528 ]
 }

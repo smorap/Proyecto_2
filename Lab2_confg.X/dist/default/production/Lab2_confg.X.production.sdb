@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 18F46K40 ]
 [d frameptr 4065 ]
-"88 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/tmr6.c
+"88 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
 [e E10048 . `uc
 TMR6_ROP_STARTS_TMRON 0
 TMR6_ROP_STARTS_TMRON_ERSHIGH 1
@@ -41,45 +41,72 @@ TMR6_C1_OUT_SYNC 8
 TMR6_C2_OUT_SYNC 9
 TMR6_ZCD_OUTPUT 10
 ]
-"107 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/adcc.c
+"107 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
 [e E10049 . `uc
 channel_ANB0 8
-channel_ANB1 9
 channel_VSS 60
 channel_Temp 61
 channel_DAC1 62
 channel_FVR_buf1 63
 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+"86 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+"54 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+"19 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+"11 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+"91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"50 C:\Users\marra\MPLABXProjects\Lab2_confg.X\main.c
+"22 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+[v _Inicializar_Maquinita Inicializar_Maquinita `(v  1 e 1 0 ]
+"34
+[v _Inicializar_Paquete Inicializar_Paquete `(v  1 e 1 0 ]
+"41
+[v _Procese_UART Procese_UART `(v  1 e 1 0 ]
+"99
+[v _Procese_Dato_Rebido Procese_Dato_Rebido `(v  1 e 1 0 ]
+"170
+[v _Ds_Separar_Digito Ds_Separar_Digito `(v  1 e 1 0 ]
+"184
 [v _main main `(v  1 e 1 0 ]
-"62 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/adcc.c
+"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
-"66 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/eusart1.c
+"119
+[v _ADCC_IsConversionDone ADCC_IsConversionDone `(a  1 e 1 0 ]
+"125
+[v _ADCC_GetConversionResult ADCC_GetConversionResult `(us  1 e 2 0 ]
+"66 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+"94
+[v _EUSART1_is_tx_ready EUSART1_is_tx_ready `(a  1 e 1 0 ]
+"99
+[v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
+"113
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+"132
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
 "144
 [v _EUSART1_DefaultFramingErrorHandler EUSART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
 "146
@@ -92,15 +119,15 @@ channel_FVR_buf1 63
 [v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "165
 [v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
-"50 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/mcc.c
+"50 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "60
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "74
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"62 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/tmr6.c
+"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
 [v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
 "100
 [v _TMR6_Start TMR6_Start `(v  1 e 1 0 ]
@@ -112,16 +139,6 @@ channel_FVR_buf1 63
 [v _TMR6_Counter8BitSet TMR6_Counter8BitSet `(v  1 e 1 0 ]
 "147
 [v _TMR6_Period8BitSet TMR6_Period8BitSet `(v  1 e 1 0 ]
-"157
-[v _TMR6_HasOverflowOccured TMR6_HasOverflowOccured `(a  1 e 1 0 ]
-"11 C:\Users\marra\MPLABXProjects\Lab2_confg.X\nuestrostimers.c
-[v _Tm_Inicie_periodico Tm_Inicie_periodico `(v  1 e 1 0 ]
-"17
-[v _Tm_Procese_tiempo Tm_Procese_tiempo `(v  1 e 1 0 ]
-"36
-[v _Tm_Hubo_periodico Tm_Hubo_periodico `(uc  1 e 1 0 ]
-"43
-[v _Tm_Baje_periodico Tm_Baje_periodico `(v  1 e 1 0 ]
 "3599 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h
 [v _RX1PPS RX1PPS `VEuc  1 e 1 @3765 ]
 [s S354 . 1 `uc 1 SSP1IF 1 0 :1:0 
@@ -233,24 +250,24 @@ channel_FVR_buf1 63
 [v _ADREF ADREF `VEuc  1 e 1 @3928 ]
 "13480
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @3929 ]
-[s S876 . 1 `uc 1 ADDSEN 1 0 :1:0 
+[s S784 . 1 `uc 1 ADDSEN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 ADGPOL 1 0 :1:5 
 `uc 1 ADIPEN 1 0 :1:6 
 `uc 1 ADPPOL 1 0 :1:7 
 ]
 "13494
-[u S882 . 1 `S876 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES882  1 e 1 @3929 ]
+[u S790 . 1 `S784 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES790  1 e 1 @3929 ]
 "13519
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @3930 ]
-[s S812 . 1 `uc 1 ADMD 1 0 :3:0 
+[s S720 . 1 `uc 1 ADMD 1 0 :3:0 
 `uc 1 ADACLR 1 0 :1:3 
 `uc 1 ADCRS 1 0 :3:4 
 `uc 1 ADPSIS 1 0 :1:7 
 ]
 "13541
-[s S817 . 1 `uc 1 ADMD0 1 0 :1:0 
+[s S725 . 1 `uc 1 ADMD0 1 0 :1:0 
 `uc 1 ADMD1 1 0 :1:1 
 `uc 1 ADMD2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -258,16 +275,16 @@ channel_FVR_buf1 63
 `uc 1 ADCRS1 1 0 :1:5 
 `uc 1 ADCRS2 1 0 :1:6 
 ]
-[u S825 . 1 `S812 1 . 1 0 `S817 1 . 1 0 ]
-[v _ADCON2bits ADCON2bits `VES825  1 e 1 @3930 ]
+[u S733 . 1 `S720 1 . 1 0 `S725 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES733  1 e 1 @3930 ]
 "13596
 [v _ADCON3 ADCON3 `VEuc  1 e 1 @3931 ]
-[s S783 . 1 `uc 1 ADTMD 1 0 :3:0 
+[s S691 . 1 `uc 1 ADTMD 1 0 :3:0 
 `uc 1 ADSOI 1 0 :1:3 
 `uc 1 ADCALC 1 0 :3:4 
 ]
 "13617
-[s S787 . 1 `uc 1 ADTMD0 1 0 :1:0 
+[s S695 . 1 `uc 1 ADTMD0 1 0 :1:0 
 `uc 1 ADTMD1 1 0 :1:1 
 `uc 1 ADTMD2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -275,8 +292,8 @@ channel_FVR_buf1 63
 `uc 1 ADCALC1 1 0 :1:5 
 `uc 1 ADCALC2 1 0 :1:6 
 ]
-[u S795 . 1 `S783 1 . 1 0 `S787 1 . 1 0 ]
-[v _ADCON3bits ADCON3bits `VES795  1 e 1 @3931 ]
+[u S703 . 1 `S691 1 . 1 0 `S695 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES703  1 e 1 @3931 ]
 "13667
 [v _ADACQ ADACQ `VEuc  1 e 1 @3932 ]
 "13737
@@ -287,7 +304,7 @@ channel_FVR_buf1 63
 [v _ADPCH ADPCH `VEuc  1 e 1 @3935 ]
 "13917
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @3936 ]
-[s S729 . 1 `uc 1 ADGO 1 0 :1:0 
+[s S637 . 1 `uc 1 ADGO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -297,21 +314,21 @@ channel_FVR_buf1 63
 `uc 1 ADON 1 0 :1:7 
 ]
 "13952
-[s S738 . 1 `uc 1 GO 1 0 :1:0 
+[s S646 . 1 `uc 1 GO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM0 1 0 :1:2 
 ]
-[s S742 . 1 `uc 1 DONE 1 0 :1:0 
+[s S650 . 1 `uc 1 DONE 1 0 :1:0 
 ]
-[s S744 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+[s S652 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
 ]
-[s S746 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+[s S654 . 1 `uc 1 GO_nDONE 1 0 :1:0 
 ]
-[s S748 . 1 `uc 1 . 1 0 :7:0 
+[s S656 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 ADCAL 1 0 :1:7 
 ]
-[u S751 . 1 `S729 1 . 1 0 `S738 1 . 1 0 `S742 1 . 1 0 `S744 1 . 1 0 `S746 1 . 1 0 `S748 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES751  1 e 1 @3936 ]
+[u S659 . 1 `S637 1 . 1 0 `S646 1 . 1 0 `S650 1 . 1 0 `S652 1 . 1 0 `S654 1 . 1 0 `S656 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES659  1 e 1 @3936 ]
 "14019
 [v _ADPREVL ADPREVL `VEuc  1 e 1 @3937 ]
 "14089
@@ -322,7 +339,7 @@ channel_FVR_buf1 63
 [v _ADRESH ADRESH `VEuc  1 e 1 @3940 ]
 "14298
 [v _ADSTAT ADSTAT `VEuc  1 e 1 @3941 ]
-[s S844 . 1 `uc 1 ADSTAT 1 0 :3:0 
+[s S752 . 1 `uc 1 ADSTAT 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 ADMATH 1 0 :1:4 
 `uc 1 ADLTHR 1 0 :1:5 
@@ -330,12 +347,12 @@ channel_FVR_buf1 63
 `uc 1 ADAOV 1 0 :1:7 
 ]
 "14318
-[s S851 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+[s S759 . 1 `uc 1 ADSTAT0 1 0 :1:0 
 `uc 1 ADSTAT1 1 0 :1:1 
 `uc 1 ADSTAT2 1 0 :1:2 
 ]
-[u S855 . 1 `S844 1 . 1 0 `S851 1 . 1 0 ]
-[v _ADSTATbits ADSTATbits `VES855  1 e 1 @3941 ]
+[u S763 . 1 `S752 1 . 1 0 `S759 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES763  1 e 1 @3941 ]
 "14363
 [v _ADRPT ADRPT `VEuc  1 e 1 @3942 ]
 "14433
@@ -372,7 +389,7 @@ channel_FVR_buf1 63
 [v _LATC LATC `VEuc  1 e 1 @3973 ]
 "16723
 [v _LATD LATD `VEuc  1 e 1 @3974 ]
-[s S595 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S872 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -382,7 +399,7 @@ channel_FVR_buf1 63
 `uc 1 LATD7 1 0 :1:7 
 ]
 "16750
-[s S604 . 1 `uc 1 LD0 1 0 :1:0 
+[s S881 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -391,8 +408,8 @@ channel_FVR_buf1 63
 `uc 1 LD6 1 0 :1:6 
 `uc 1 LD7 1 0 :1:7 
 ]
-[u S613 . 1 `S595 1 . 1 0 `S604 1 . 1 0 ]
-[v _LATDbits LATDbits `VES613  1 e 1 @3974 ]
+[u S890 . 1 `S872 1 . 1 0 `S881 1 . 1 0 ]
+[v _LATDbits LATDbits `VES890  1 e 1 @3974 ]
 "16835
 [v _LATE LATE `VEuc  1 e 1 @3975 ]
 "16932
@@ -568,12 +585,24 @@ channel_FVR_buf1 63
 ]
 [u S145 . 1 `S131 1 . 1 0 `S133 1 . 1 0 `S138 1 . 1 0 `S140 1 . 1 0 ]
 [v _T6RSTbits T6RSTbits `VES145  1 e 1 @4020 ]
+"6 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+[v _V_Recibido V_Recibido `VE[7]uc  1 e 7 0 ]
+"7
+[v _Transmision_Error Transmision_Error `VEuc  1 e 1 0 ]
+"8
+[v _Transmision_Completada Transmision_Completada `VEuc  1 e 1 0 ]
+"9
+[v _conteo conteo `VEi  1 e 2 0 ]
+"10
+[v _recibido recibido `VEus  1 e 2 0 ]
+"11
+[v _recibidoo recibidoo `VEus  1 e 2 0 ]
 [s S308 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"52 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/eusart1.c
+"52 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
 [u S313 . 1 `S308 1 . 1 0 `uc 1 status 1 0 ]
 [v _eusart1RxLastError eusart1RxLastError `VES313  1 e 1 0 ]
 "58
@@ -582,76 +611,47 @@ channel_FVR_buf1 63
 [v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"50 C:\Users\marra\MPLABXProjects\Lab2_confg.X\main.c
+"184 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-[s S584 Tm_Periodico 9 `ui 1 contador 2 0 `ui 1 periodo 2 2 `ul 1 timeout 4 4 `uc 1 banderas 1 8 ]
-"54
-[v main@Mi_timer Mi_timer `S584  1 a 9 7 ]
-"86
+[s S860 Maquinita 5 `i 1 posicion 2 0 `uc 1 inicio 1 2 `uc 1 finall 1 3 `uc 1 estados 1 4 ]
+"187
+[v main@My_Maquinita My_Maquinita `S860  1 a 5 18 ]
+[s S865 Paquete_Salida 4 `[4]uc 1 Pack 4 0 ]
+"190
+[v main@My_Paquete_Salida My_Paquete_Salida `S865  1 a 4 14 ]
+"195
+[v main@ADC_Value ADC_Value `us  1 a 2 11 ]
+"196
+[v main@enviar enviar `uc  1 a 1 13 ]
+"236
 } 0
-"17 C:\Users\marra\MPLABXProjects\Lab2_confg.X\nuestrostimers.c
-[v _Tm_Procese_tiempo Tm_Procese_tiempo `(v  1 e 1 0 ]
-{
-[s S584 Tm_Periodico 9 `ui 1 contador 2 0 `ui 1 periodo 2 2 `ul 1 timeout 4 4 `uc 1 banderas 1 8 ]
-[v Tm_Procese_tiempo@ctp ctp `*.39S584  1 p 2 0 ]
-"32
-} 0
-"11
-[v _Tm_Inicie_periodico Tm_Inicie_periodico `(v  1 e 1 0 ]
-{
-[s S584 Tm_Periodico 9 `ui 1 contador 2 0 `ui 1 periodo 2 2 `ul 1 timeout 4 4 `uc 1 banderas 1 8 ]
-[v Tm_Inicie_periodico@ctp ctp `*.39S584  1 p 2 0 ]
-[v Tm_Inicie_periodico@periodo periodo `ui  1 p 2 2 ]
-"16
-} 0
-"36
-[v _Tm_Hubo_periodico Tm_Hubo_periodico `(uc  1 e 1 0 ]
-{
-[s S584 Tm_Periodico 9 `ui 1 contador 2 0 `ui 1 periodo 2 2 `ul 1 timeout 4 4 `uc 1 banderas 1 8 ]
-[v Tm_Hubo_periodico@ctp ctp `*.39S584  1 p 2 0 ]
-"39
-} 0
-"43
-[v _Tm_Baje_periodico Tm_Baje_periodico `(v  1 e 1 0 ]
-{
-[s S584 Tm_Periodico 9 `ui 1 contador 2 0 `ui 1 periodo 2 2 `ul 1 timeout 4 4 `uc 1 banderas 1 8 ]
-[v Tm_Baje_periodico@ctp ctp `*.39S584  1 p 2 0 ]
-"46
-} 0
-"157 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/tmr6.c
-[v _TMR6_HasOverflowOccured TMR6_HasOverflowOccured `(a  1 e 1 0 ]
-{
-"160
-[v TMR6_HasOverflowOccured@status status `a  1 a 1 0 ]
-"167
-} 0
-"50 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/mcc.c
+"50 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "58
 } 0
-"62 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/tmr6.c
+"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
 [v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
 {
 "86
 } 0
-"74 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/mcc.c
+"74 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "88
 } 0
-"55 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "129
 } 0
-"60 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/mcc.c
+"60 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "72
 } 0
-"66 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/eusart1.c
+"66 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 {
 "92
@@ -674,8 +674,107 @@ channel_FVR_buf1 63
 [v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "167
 } 0
-"62 C:\Users\marra\MPLABXProjects\Lab2_confg.X\mcc_generated_files/adcc.c
+"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 {
 "105
+} 0
+"41 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+[v _Procese_UART Procese_UART `(v  1 e 1 0 ]
+{
+[s S860 Maquinita 5 `i 1 posicion 2 0 `uc 1 inicio 1 2 `uc 1 finall 1 3 `uc 1 estados 1 4 ]
+[v Procese_UART@mqnt mqnt `*.39S860  1 p 2 0 ]
+"97
+} 0
+"113 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+{
+"130
+} 0
+"99 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+[v _Procese_Dato_Rebido Procese_Dato_Rebido `(v  1 e 1 0 ]
+{
+"167
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"34 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+[v _Inicializar_Paquete Inicializar_Paquete `(v  1 e 1 0 ]
+{
+[s S865 Paquete_Salida 4 `[4]uc 1 Pack 4 0 ]
+[v Inicializar_Paquete@mqnt mqnt `*.39S865  1 p 2 0 ]
+"39
+} 0
+"22
+[v _Inicializar_Maquinita Inicializar_Maquinita `(v  1 e 1 0 ]
+{
+[s S860 Maquinita 5 `i 1 posicion 2 0 `uc 1 inicio 1 2 `uc 1 finall 1 3 `uc 1 estados 1 4 ]
+[v Inicializar_Maquinita@mqnt mqnt `*.39S860  1 p 2 0 ]
+"27
+} 0
+"94 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
+[v _EUSART1_is_tx_ready EUSART1_is_tx_ready `(a  1 e 1 0 ]
+{
+"97
+} 0
+"99
+[v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
+{
+"102
+} 0
+"132
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+{
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 0 ]
+"139
+} 0
+"170 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+[v _Ds_Separar_Digito Ds_Separar_Digito `(v  1 e 1 0 ]
+{
+[s S865 Paquete_Salida 4 `[4]uc 1 Pack 4 0 ]
+[v Ds_Separar_Digito@dsp dsp `*.39S865  1 p 2 7 ]
+[v Ds_Separar_Digito@datto datto `us  1 p 2 9 ]
+"178
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
+"119 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
+[v _ADCC_IsConversionDone ADCC_IsConversionDone `(a  1 e 1 0 ]
+{
+"123
+} 0
+"125
+[v _ADCC_GetConversionResult ADCC_GetConversionResult `(us  1 e 2 0 ]
+{
+"129
 } 0
