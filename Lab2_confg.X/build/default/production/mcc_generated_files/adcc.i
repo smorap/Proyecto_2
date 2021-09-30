@@ -17027,7 +17027,7 @@ void ADCC_Initialize(void)
 
     ADREF = 0x00;
 
-    ADACT = 0x08;
+    ADACT = 0x00;
 
     ADCLK = 0x07;
 

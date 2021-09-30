@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 18F46K40 ]
 [d frameptr 4065 ]
-"88 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
+"88 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
 [e E10048 . `uc
 TMR6_ROP_STARTS_TMRON 0
 TMR6_ROP_STARTS_TMRON_ERSHIGH 1
@@ -41,7 +41,7 @@ TMR6_C1_OUT_SYNC 8
 TMR6_C2_OUT_SYNC 9
 TMR6_ZCD_OUTPUT 10
 ]
-"107 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
+"107 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
 [e E10049 . `uc
 channel_ANB0 8
 channel_VSS 60
@@ -79,7 +79,7 @@ channel_FVR_buf1 63
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"22 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+"22 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\main.c
 [v _Inicializar_Maquinita Inicializar_Maquinita `(v  1 e 1 0 ]
 "34
 [v _Inicializar_Paquete Inicializar_Paquete `(v  1 e 1 0 ]
@@ -87,17 +87,17 @@ channel_FVR_buf1 63
 [v _Procese_UART Procese_UART `(v  1 e 1 0 ]
 "99
 [v _Procese_Dato_Rebido Procese_Dato_Rebido `(v  1 e 1 0 ]
-"170
+"171
 [v _Ds_Separar_Digito Ds_Separar_Digito `(v  1 e 1 0 ]
-"184
+"185
 [v _main main `(v  1 e 1 0 ]
-"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
+"62 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 "119
 [v _ADCC_IsConversionDone ADCC_IsConversionDone `(a  1 e 1 0 ]
 "125
 [v _ADCC_GetConversionResult ADCC_GetConversionResult `(us  1 e 2 0 ]
-"66 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
+"66 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 "94
 [v _EUSART1_is_tx_ready EUSART1_is_tx_ready `(a  1 e 1 0 ]
@@ -119,15 +119,15 @@ channel_FVR_buf1 63
 [v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "165
 [v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
-"50 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
+"50 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "60
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "74
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
+"62 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
 [v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
 "100
 [v _TMR6_Start TMR6_Start `(v  1 e 1 0 ]
@@ -139,6 +139,8 @@ channel_FVR_buf1 63
 [v _TMR6_Counter8BitSet TMR6_Counter8BitSet `(v  1 e 1 0 ]
 "147
 [v _TMR6_Period8BitSet TMR6_Period8BitSet `(v  1 e 1 0 ]
+"157
+[v _TMR6_HasOverflowOccured TMR6_HasOverflowOccured `(a  1 e 1 0 ]
 "3599 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k40.h
 [v _RX1PPS RX1PPS `VEuc  1 e 1 @3765 ]
 [s S354 . 1 `uc 1 SSP1IF 1 0 :1:0 
@@ -385,6 +387,27 @@ channel_FVR_buf1 63
 [v _LATA LATA `VEuc  1 e 1 @3971 ]
 "16499
 [v _LATB LATB `VEuc  1 e 1 @3972 ]
+[s S912 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"16526
+[s S921 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S930 . 1 `S912 1 . 1 0 `S921 1 . 1 0 ]
+[v _LATBbits LATBbits `VES930  1 e 1 @3972 ]
 "16611
 [v _LATC LATC `VEuc  1 e 1 @3973 ]
 "16723
@@ -585,14 +608,14 @@ channel_FVR_buf1 63
 ]
 [u S145 . 1 `S131 1 . 1 0 `S133 1 . 1 0 `S138 1 . 1 0 `S140 1 . 1 0 ]
 [v _T6RSTbits T6RSTbits `VES145  1 e 1 @4020 ]
-"6 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+"6 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\main.c
 [v _V_Recibido V_Recibido `VE[7]uc  1 e 7 0 ]
 "7
 [v _Transmision_Error Transmision_Error `VEuc  1 e 1 0 ]
 "8
 [v _Transmision_Completada Transmision_Completada `VEuc  1 e 1 0 ]
 "9
-[v _conteo conteo `VEi  1 e 2 0 ]
+[v _conteo conteo `VEuc  1 e 1 0 ]
 "10
 [v _recibido recibido `VEus  1 e 2 0 ]
 "11
@@ -602,7 +625,7 @@ channel_FVR_buf1 63
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"52 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
+"52 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
 [u S313 . 1 `S308 1 . 1 0 `uc 1 status 1 0 ]
 [v _eusart1RxLastError eusart1RxLastError `VES313  1 e 1 0 ]
 "58
@@ -611,47 +634,54 @@ channel_FVR_buf1 63
 [v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"184 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+"185 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 [s S860 Maquinita 5 `i 1 posicion 2 0 `uc 1 inicio 1 2 `uc 1 finall 1 3 `uc 1 estados 1 4 ]
-"187
-[v main@My_Maquinita My_Maquinita `S860  1 a 5 18 ]
+"188
+[v main@My_Maquinita My_Maquinita `S860  1 a 5 19 ]
 [s S865 Paquete_Salida 4 `[4]uc 1 Pack 4 0 ]
-"190
-[v main@My_Paquete_Salida My_Paquete_Salida `S865  1 a 4 14 ]
-"195
-[v main@ADC_Value ADC_Value `us  1 a 2 11 ]
+"191
+[v main@My_Paquete_Salida My_Paquete_Salida `S865  1 a 4 15 ]
 "196
-[v main@enviar enviar `uc  1 a 1 13 ]
-"236
+[v main@ADC_Value ADC_Value `us  1 a 2 12 ]
+"197
+[v main@enviar enviar `uc  1 a 1 14 ]
+"249
 } 0
-"50 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
+"157 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
+[v _TMR6_HasOverflowOccured TMR6_HasOverflowOccured `(a  1 e 1 0 ]
+{
+"160
+[v TMR6_HasOverflowOccured@status status `a  1 a 1 0 ]
+"167
+} 0
+"50 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "58
 } 0
-"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
+"62 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/tmr6.c
 [v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
 {
 "86
 } 0
-"74 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
+"74 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "88
 } 0
-"55 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "129
 } 0
-"60 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
+"60 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "72
 } 0
-"66 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
+"66 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 {
 "92
@@ -674,27 +704,27 @@ channel_FVR_buf1 63
 [v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "167
 } 0
-"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
+"62 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 {
 "105
 } 0
-"41 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+"41 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\main.c
 [v _Procese_UART Procese_UART `(v  1 e 1 0 ]
 {
 [s S860 Maquinita 5 `i 1 posicion 2 0 `uc 1 inicio 1 2 `uc 1 finall 1 3 `uc 1 estados 1 4 ]
 [v Procese_UART@mqnt mqnt `*.39S860  1 p 2 0 ]
 "97
 } 0
-"113 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
+"113 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
 {
 "130
 } 0
-"99 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+"99 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\main.c
 [v _Procese_Dato_Rebido Procese_Dato_Rebido `(v  1 e 1 0 ]
 {
-"167
+"168
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
@@ -706,7 +736,7 @@ channel_FVR_buf1 63
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"34 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+"34 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\main.c
 [v _Inicializar_Paquete Inicializar_Paquete `(v  1 e 1 0 ]
 {
 [s S865 Paquete_Salida 4 `[4]uc 1 Pack 4 0 ]
@@ -720,7 +750,7 @@ channel_FVR_buf1 63
 [v Inicializar_Maquinita@mqnt mqnt `*.39S860  1 p 2 0 ]
 "27
 } 0
-"94 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
+"94 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/eusart1.c
 [v _EUSART1_is_tx_ready EUSART1_is_tx_ready `(a  1 e 1 0 ]
 {
 "97
@@ -738,13 +768,13 @@ channel_FVR_buf1 63
 [v EUSART1_Write@txData txData `uc  1 a 1 0 ]
 "139
 } 0
-"170 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\main.c
+"171 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\main.c
 [v _Ds_Separar_Digito Ds_Separar_Digito `(v  1 e 1 0 ]
 {
 [s S865 Paquete_Salida 4 `[4]uc 1 Pack 4 0 ]
 [v Ds_Separar_Digito@dsp dsp `*.39S865  1 p 2 7 ]
 [v Ds_Separar_Digito@datto datto `us  1 p 2 9 ]
-"178
+"179
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
@@ -768,7 +798,7 @@ channel_FVR_buf1 63
 [v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
 "30
 } 0
-"119 C:\Users\estudiante\Downloads\Lab 1\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
+"119 C:\Users\estudiante\Downloads\Lab_sergio\Proyecto_2\Lab2_confg.X\mcc_generated_files/adcc.c
 [v _ADCC_IsConversionDone ADCC_IsConversionDone `(a  1 e 1 0 ]
 {
 "123

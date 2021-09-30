@@ -6,7 +6,7 @@
 volatile uint8_t V_Recibido[7];
 volatile char Transmision_Error=0;
 volatile char Transmision_Completada=0;
-volatile int conteo=0;
+volatile uint8_t conteo=0;
 volatile uint16_t recibido=0;
 volatile uint16_t recibidoo=0;
 
@@ -164,6 +164,7 @@ void Procese_Dato_Rebido(void){
 		T6CON = 0xFC;// aqui se modifican los registros del preescaler y posescaler (T6CON)  
 		conteo = recibido / 208; // este valor va al registro de conteo (T6PR) 
 	}
+    T6PR=conteo;
 }
 
 
@@ -196,11 +197,12 @@ void main(void){
 	char enviar = 0;
 	
 	// inicia con un periodo de 25ms
-	T6PR = 0xDE; //registro de conteo del TIMER6 ( inicia en 25ms) 
+	T6PR = 0x4F; //registro de conteo del TIMER6 ( inicia en 25ms) 
 	T6CON = 0xF6; //configiracion de prescaler y postscaler para 25ms
 	IO_RD0_SetLow();
 	IO_RD1_SetLow();
-	
+	IO_RB3_SetLow();
+	IO_RD5_SetLow();
     while (1){
 		if (EUSART1_is_rx_ready()){            
 			Procese_UART (&My_Maquinita);
@@ -208,13 +210,24 @@ void main(void){
 		}
 		
 		if (Transmision_Completada==1){
-            IO_RD0_SetHigh();
+            IO_RD0_Toggle();
 			Transmision_Completada = 0;		
 			Procese_Dato_Rebido(); //esta funcion procesa el dato recibido y calcula el conteo en entero 
 			//funcion que convierte a Hex y modifica el registro (T6PR)
 		}
-		
-		if (ADCC_IsConversionDone()){
+        if (TMR6_HasOverflowOccured()){
+            IO_RD0_SetHigh();
+            // Turn on the ADC module
+            ADCON0bits.ADON = 1;
+
+            // Start the conversion
+            ADCON0bits.ADGO = 1;
+            IO_RB3_Toggle();
+
+        }
+		if (!ADCC_IsConversionDone()){
+            IO_RD0_SetLow();
+            IO_RD5_Toggle();
 			ADC_Value = ADCC_GetConversionResult();
 			Ds_Separar_Digito(&My_Paquete_Salida, ADC_Value);
 			enviar = 1;	

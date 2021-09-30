@@ -16841,9 +16841,9 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 162 "./mcc_generated_files/pin_manager.h"
+# 202 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 174 "./mcc_generated_files/pin_manager.h"
+# 214 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -17268,7 +17268,7 @@ void PMD_Initialize(void);
 volatile uint8_t V_Recibido[7];
 volatile char Transmision_Error=0;
 volatile char Transmision_Completada=0;
-volatile int conteo=0;
+volatile uint8_t conteo=0;
 volatile uint16_t recibido=0;
 volatile uint16_t recibidoo=0;
 
@@ -17426,6 +17426,7 @@ void Procese_Dato_Rebido(void){
   T6CON = 0xFC;
   conteo = recibido / 208;
  }
+    T6PR=conteo;
 }
 
 
@@ -17458,11 +17459,12 @@ void main(void){
  char enviar = 0;
 
 
- T6PR = 0xDE;
+ T6PR = 0x4F;
  T6CON = 0xF6;
  do { LATDbits.LATD0 = 0; } while(0);
  do { LATDbits.LATD1 = 0; } while(0);
-
+ do { LATBbits.LATB3 = 0; } while(0);
+ do { LATDbits.LATD5 = 0; } while(0);
     while (1){
   if (EUSART1_is_rx_ready()){
    Procese_UART (&My_Maquinita);
@@ -17470,13 +17472,24 @@ void main(void){
   }
 
   if (Transmision_Completada==1){
-            do { LATDbits.LATD0 = 1; } while(0);
+            do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0);
    Transmision_Completada = 0;
    Procese_Dato_Rebido();
 
   }
+        if (TMR6_HasOverflowOccured()){
+            do { LATDbits.LATD0 = 1; } while(0);
 
-  if (ADCC_IsConversionDone()){
+            ADCON0bits.ADON = 1;
+
+
+            ADCON0bits.ADGO = 1;
+            do { LATBbits.LATB3 = ~LATBbits.LATB3; } while(0);
+
+        }
+  if (!ADCC_IsConversionDone()){
+            do { LATDbits.LATD0 = 0; } while(0);
+            do { LATDbits.LATD5 = ~LATDbits.LATD5; } while(0);
    ADC_Value = ADCC_GetConversionResult();
    Ds_Separar_Digito(&My_Paquete_Salida, ADC_Value);
    enviar = 1;

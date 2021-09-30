@@ -1526,14 +1526,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 70:     TRISA = 0xFF;
 [e = _TRISA -> -> 255 `i `uc ]
 "71
-[; ;mcc_generated_files/pin_manager.c: 71:     TRISB = 0xFF;
-[e = _TRISB -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 71:     TRISB = 0xF7;
+[e = _TRISB -> -> 247 `i `uc ]
 "72
 [; ;mcc_generated_files/pin_manager.c: 72:     TRISC = 0xFD;
 [e = _TRISC -> -> 253 `i `uc ]
 "73
-[; ;mcc_generated_files/pin_manager.c: 73:     TRISD = 0xFC;
-[e = _TRISD -> -> 252 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 73:     TRISD = 0xDC;
+[e = _TRISD -> -> 220 `i `uc ]
 "78
 [; ;mcc_generated_files/pin_manager.c: 78:     ANSELD = 0xFF;
 [e = _ANSELD -> -> 255 `i `uc ]
